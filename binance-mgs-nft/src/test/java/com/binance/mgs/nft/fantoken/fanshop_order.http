@@ -1,0 +1,13 @@
+### order notification
+POST http://localhost:9611/v1/friendly/nft/fantoken/fanshop/order-notification
+Content-Type: application/json
+BinancePay-Timestamp: 1639733951349
+BinancePay-Nonce: Sdw3R6etJtYDvelwdsbOQ8E1iQooO3pK
+BinancePay-Signature: OPsyo2cAJ6Af5P9qI4/9ZC6zNtcBomCwCiqbpCoWRG9G0EPZTAGiKpKPcJBK0YD15thSScSYzyIsBDkD/4Z5/V5U8jrFRQVy0gQN8/wIz1mHV9wELb4E9os3T4aPX+dJRu9g+Ol9z9trAIT4okyRPX5U0Am38PvMR/ER4I00csc=
+
+{
+  "bizType": "PAY",
+  "data": "{\"merchantTradeNo\":\"168273136327042048\",\"totalFee\":9.00000000,\"transactTime\":1639733709570,\"currency\":\"BNB\",\"commission\":0,\"productType\":\"FanToken-FanShop\",\"productName\":\"FanToken-FanShop\",\"tradeType\":\"WEB\"}",
+  "bizId": 132921487770116096,
+  "bizStatus": "PAY_CLOSED"
+}

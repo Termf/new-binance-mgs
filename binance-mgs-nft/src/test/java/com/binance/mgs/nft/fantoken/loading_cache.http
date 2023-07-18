@@ -1,0 +1,61 @@
+### query team info
+GET http://localhost:9611/v1/public/nft/fantoken/query-team-info?symbol=ApiTestingSymbol-1626270245405
+Content-Type: application/json
+
+### query banner info by page
+POST http://localhost:9611/v1/public/nft/fantoken/query-banner-by-page
+Content-Type: application/json
+lang: es-MX
+
+{
+  "page": 1,
+  "size": 3,
+  "params": {
+    "rank": "{\"orderKey\":\"banner_rank\",\"orderMethod\":\"DESC\"}"
+  }
+}
+
+### query team info by page
+POST http://localhost:9611/v1/public/nft/fantoken/query-team-by-page
+Content-Type: application/json
+
+{
+  "page": 1,
+  "size": 10,
+  "params": {
+    "rank": "{\"orderKey\":\"team_rank\",\"orderMethod\":\"DESC\"}"
+  }
+}
+
+### query vote info by page
+POST http://localhost:9611/v1/friendly/nft/fantoken/query-vote-by-page
+Content-Type: application/json
+
+{
+  "page": 1,
+  "size": 15,
+  "params": {
+    "query": "{\"team_id\":\"63119e0c03db48b6b4edfb88ad44297e\"}",
+    "rank": "{\"orderKey\":\"vote_rank\",\"orderMethod\":\"DESC\"}"
+  }
+}
+
+### query vote info by page
+POST http://localhost:9611/v1/friendly/nft/fantoken/query-vote-by-page
+Content-Type: application/json
+
+{
+  "page": 1,
+  "size": 15,
+  "params": {
+    "rank": "{\"orderKey\":\"vote_rank\",\"orderMethod\":\"DESC\"}"
+  }
+}
+
+### query vote info
+GET http://localhost:9611/v1/friendly/nft/fantoken/query-vote-info?voteId=87d73206e9374bbfbbce271915abe503
+Content-Type: application/json
+
+### query update info
+GET http://localhost:9611/v1/public/nft/fantoken/query-update-event-list?voteId=8660b92ce09142a9a60e30b91057e340
+Content-Type: application/json

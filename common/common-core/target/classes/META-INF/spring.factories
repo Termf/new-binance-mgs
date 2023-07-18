@@ -1,0 +1,15 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.binance.mgs.config.AutoConfiguration,\
+com.binance.mgs.config.CrowdinAutoConfiguration,\
+com.binance.mgs.config.CaffeineCacheConfig,\
+com.binance.mgs.config.UserOperationLogKafkaConfig,\
+com.binance.mgs.config.MessageSourceConfig,\
+com.binance.mgs.config.CDNAutoConfiguration
+
+org.springframework.boot.SpringApplicationRunListener=\
+com.binance.mgs.config.ApolloPropertiesLoader
+
+
+org.springframework.context.ApplicationListener=\
+com.binance.mgs.config.IllegalRequestUrlCheckListener,\
+com.binance.mgs.config.IllegalResponseTypeCheckListener

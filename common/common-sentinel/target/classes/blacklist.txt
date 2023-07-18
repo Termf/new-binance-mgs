@@ -1,0 +1,2 @@
+com.binance.mgs.risk.kyc.controller.UserFaceController
+com.binance.mgs.risk.kyc.controller.ThirdFaceController

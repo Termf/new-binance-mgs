@@ -1,0 +1,36 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+
+* ming@binance.com thomas.li@binance.com nan.yin@binance.com jerry.l@binance.com
+/CODEOWNERS ming@binance.com thomas.li@binance.com nan.yin@binance.com jerry.l@binance.com
+
+/binance-mgs-fiatpayment/       kevin.qq@binance.com noah@binance.com dennis.walton@binance.com mikiya.c@binance.com 
+/binance-mgs-account/ yang@binance.com nash.peng@binance.com kay.zhao@binance.com alex.men@binance.com
+/binance-mgs-asset/ marco@binance.com chaos.sun@binance.com chris.c@binance.com david.y@binance.com david.ll@binance.com felix.zz@binance.com francis.h@binance.com
+/binance-mgs-bigdata/ charlie.w@binance.com jack.ww@binance.com kaiming.chen@binance.com gulimire.ailiken@binance.com
+/binance-mgs-busd/ jason.ll@binance.com jim.l@binance.com
+/binance-mgs-c2c/ benjamin.wang@binance.com victor.boyko@binance.com yangyang.liu@binance.com xon.mai@binance.com long.zhang@binance.com nastya.otreshko@binance.com zhongqi.bai@binance.com
+/binance-mgs-capital/ marco@binance.com w.xie@binance.com zigar.qin@binance.com gary.chen@binance.com yang.li@binance.com jack.kang@binance.com steve.zhou@binance.com
+/binance-mgs-card/ xiaomei.zhan@binance.com barbara.sun@binance.com nancy.l@binance.com hung.le@binance.com
+/binance-mgs-common/ thomas.li@binance.com nan.yin@binance.com jerry.l@binance.com amigo.yao@binance.com james.li@binance.com
+/binance-mgs-compliance/ hunter.yy@binance.com tony.cheng@binance.com ryan.dd@binance.com oliver.qian@binance.com jason.ruan@binance.com
+/binance-mgs-composite/ feng.chen@binance.com hunter.yy@binance.com jie.chen@binance.com
+/binance-mgs-composite/src/main/java/com/binance/mgs/composite/market/ feng.chen@binance.com hunter.yy@binance.com jie.chen@binance.com alex.ss@binance.com
+/binance-mgs-composite/src/main/java/com/binance/mgs/composite/cms/ alex.ss@binance.com
+/binance-mgs-composite/src/main/java/com/binance/mgs/composite/config/ feng.chen@binance.com hunter.yy@binance.com jie.chen@binance.com alex.ss@binance.com
+/binance-mgs-download/ thomas.li@binance.com nan.yin@binance.com jerry.l@binance.com amigo.yao@binance.com qifeng.huang@binance.com Arthur.huang@binance.com
+/binance-mgs-future/ andy.d@binance.com cloud.li@binance.com karl.ma@binance.com alex.ding@binance.com jack.jiang@binance.com neal@binance.com jiangquan.yan@binance.com loong.zhang@binance.com lorance.liu@binance.com curry.w@binance.com
+/binance-mgs-giftcard/ daniel.liu@binance.com abhinav.kumar@binance.com ben.chen@binance.com david.h@binance.com bruce.l@binance.com ivan.p@binance.com abdelrahman.kassem@binance.com
+/binance-mgs-growth/ hugh.yang@binance.com mingo.w@binance.com alex.ss@binance.com nick.x@binance.com
+/binance-mgs-haodesk/  arc.qian@binance.com dori.ding@binance.com tao.yang@binance.com
+/binance-mgs-lending/ qifeng.huang@binance.com Arthur.huang@binance.com
+/binance-mgs-nft/ sim.y@binance.com will.s@binance.com felix.zzz@binance.com robin.z@binance.com frank.fan@binance.com
+/binance-mgs-pay/ eric.zhao@binance.com jeremy.w@binance.com barbara.sun@binance.com hoang.le@binance.com toby.c@binance.com paul.c@binance.com nancy.y@binance.com
+/binance-mgs-risk/ yue.z@binance.com adam.yy@binance.com hongjie.xia@binance.com vector.h@binance.com minh.tran@binance.com john.chiang@binance.com bill.yin@binance.com seven.g@binance.com alven.g@binance.com
+/binance-mgs-spot/ marco@binance.com chaos.sun@binance.com chris.c@binance.com david.y@binance.com david.ll@binance.com felix.zz@binance.com francis.h@binance.com haiyuan.cheng@binance.com
+/binance-mgs-content/ nick.x@binance.com carey.l@binance.com wayne.cc@binance.com

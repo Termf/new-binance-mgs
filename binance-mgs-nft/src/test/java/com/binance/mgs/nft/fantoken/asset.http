@@ -1,0 +1,11 @@
+### query use asset
+POST http://localhost:9611/v1/private/nft/fantoken/asset
+Content-Type: application/json
+
+{
+  "asset": "BNB"
+}
+
+### mystery box detail
+GET http://localhost:9611/v1/public/nft/fantoken/mystery-box/detail?productId=193253842509844480
+Content-Type: application/json

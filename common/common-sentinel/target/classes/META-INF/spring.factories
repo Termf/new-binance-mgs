@@ -1,0 +1,5 @@
+org.springframework.boot.SpringApplicationRunListener=\
+com.binance.mgs.sentinel.config.SentinelRunListener
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.binance.mgs.sentinel.config.SentinelConfiguration

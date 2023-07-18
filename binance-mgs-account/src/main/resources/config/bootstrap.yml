@@ -1,0 +1,35 @@
+server:
+    port: 9208
+info:
+    build:
+        artifact: '@project.artifactId@'
+        description: '@project.description@'
+        name: '@project.name@'
+        version: '@project.version@'
+spring:
+    application:
+        name: binance-mgs-account
+    redis:
+        pool:
+            max-active: 8
+            max-idle: 8
+            min-idle: 0
+        timeout: 5000
+eureka:
+    instance:
+        instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+        prefer-ip-address: true
+        lease-expiration-duration-in-seconds: 15
+        lease-renewal-interval-in-seconds: 5
+    client:
+        healthcheck:
+            enabled: false
+#        registry-fetch-interval-seconds: 5
+apollo:
+    autoUpdateInjectedSpringProperties: true
+    bootstrap:
+        enabled: true
+        namespaces: application
+mgs:
+    services:
+        include: account,api-mgmt,country,oauth,authcenter,qrcode,user-device-auth,marketing,account-vip-portal

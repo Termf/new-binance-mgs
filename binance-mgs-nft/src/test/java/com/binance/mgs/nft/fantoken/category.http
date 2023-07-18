@@ -1,0 +1,27 @@
+### query nft market info
+POST http://localhost:9611/v1/public/nft/market-mystery/mystery-list
+Content-Type: application/json
+
+{
+  "page": 1,
+  "size": 16,
+  "params": {
+    "keyword": "Bronze",
+    "nftType": null,
+    "orderBy": "amount_sort",
+    "orderType": "1",
+    "serialNo": [
+      "134260683398322176"
+    ],
+    "tradeType": "0"
+  }
+}
+
+### query nft market info
+POST http://localhost:9611/v1/friendly/nft/fantoken/collection/display
+Content-Type: application/json
+x-gray-env: 1707
+
+{
+  "teamId": "63119e0c03db48b6b4edfb88ad442972"
+}

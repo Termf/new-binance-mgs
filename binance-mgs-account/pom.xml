@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.binance.infra.avengers</groupId>
+        <artifactId>platform-infra-starter-mgs-parent</artifactId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>binance-mgs-account</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.binance.infra.avengers</groupId>
+            <artifactId>platform-starter-amazons3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.infra.avengers</groupId>
+            <artifactId>platform-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.infra.avengers</groupId>
+            <artifactId>platform-starter-binance-mgs-business</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.account</groupId>
+            <artifactId>account-api2</artifactId>
+            <version>2.1.4-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.accountdevicequery</groupId>
+            <artifactId>account-devicequery-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.assetservice</groupId>
+            <artifactId>asset-service-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.inspector</groupId>
+            <artifactId>inspector-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.mbxgateway</groupId>
+            <artifactId>mbxgateway-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.report</groupId>
+            <artifactId>report-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.risk</groupId>
+            <artifactId>risk-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.streamer</groupId>
+            <artifactId>streamer-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.authcenter</groupId>
+            <artifactId>authcenter-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.certification</groupId>
+            <artifactId>certification-center-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.future</groupId>
+            <artifactId>future-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.margin</groupId>
+            <artifactId>margin-api2</artifactId>
+            <!--这里需要注意，common里面用到的版本是2.0.4,为了防止影响其他业务，这里仅仅升级了account的-->
+            <version>2.0.6-SNAPSHOT</version>
+        </dependency>
+        <!-- aws sqs-->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-sqs</artifactId>
+        </dependency>
+        <!-- fixme: c2c要拆出去，不要放在这里，如果拆不出去，需要和业务协调 -->
+        <dependency>
+            <groupId>com.binance.c2c</groupId>
+            <artifactId>c2c-api2</artifactId>
+        </dependency>
+        <!-- fixme: 法币要拆出去，不要放在这里，如果拆不出去，需要和业务协调 -->
+        <dependency>
+            <groupId>com.binance.fiatpayment</groupId>
+            <artifactId>fiatpayment-core-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.qrcode</groupId>
+            <artifactId>qrcode-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.accountsubuser</groupId>
+            <artifactId>account-subuser-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountsubuser</groupId>
+            <artifactId>account-subuser-core</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.assetlog</groupId>
+            <artifactId>asset-log-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.zafarkhaja</groupId>
+            <artifactId>java-semver</artifactId>
+            <version>0.9.0</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.security</groupId>
+            <artifactId>antibot-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.security</groupId>
+            <artifactId>antibot-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.userbigdata</groupId>
+            <artifactId>user-big-data-api</artifactId>
+            <version>2.0.1-SNAPSHOT</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.binance.broker</groupId>
+            <artifactId>broker-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountlog</groupId>
+            <artifactId>account-log-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.oauth</groupId>
+            <artifactId>oauth-api2</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.infra.avengers</groupId>
+            <artifactId>platform-starter-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.lettuce</groupId>
+            <artifactId>lettuce-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sensorsdata.analytics.javasdk</groupId>
+            <artifactId>SensorsAnalyticsSDK</artifactId>
+            <version>3.1.17</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.deliverystreamer</groupId>
+            <artifactId>deliverystreamer-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.futurestreamer</groupId>
+            <artifactId>futurestreamer-api2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountcompliance</groupId>
+            <artifactId>account-compliance-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-recaptchaenterprise</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.bitbucket.b_c/jose4j -->
+        <dependency>
+            <groupId>org.bitbucket.b_c</groupId>
+            <artifactId>jose4j</artifactId>
+            <version>0.7.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.commission</groupId>
+            <artifactId>commission-api</artifactId>
+            <version>3.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.transfer</groupId>
+            <artifactId>transfer-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.binance.accountdefensecenter</groupId>
+            <artifactId>account-defense-center-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountdefensecenter</groupId>
+            <artifactId>account-defense-center-core</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountpersonalcenter</groupId>
+            <artifactId>account-personalcenter-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountsubuserquery</groupId>
+            <artifactId>account-subuserquery-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.capital</groupId>
+            <artifactId>capital-api2</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.margin</groupId>
+            <artifactId>isolated-margin-api2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.future</groupId>
+            <artifactId>delivery-periphery-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountshardingredis</groupId>
+            <artifactId>account-sharding-redis-core</artifactId>
+            <version>2.1.4-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.account2fa</groupId>
+            <artifactId>account-2fa-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.account2fa</groupId>
+            <artifactId>account-2fa-starter</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>fido2-server-api</artifactId>
+            <groupId>com.binance.fido2</groupId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountoauth</groupId>
+            <artifactId>account-oauth-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountapimanage</groupId>
+            <artifactId>account-apimanage-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.quota</groupId>
+            <artifactId>quota-center-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.starter</groupId>
+            <artifactId>security-spring-boot-starter</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.decision</groupId>
+            <artifactId>decision-api2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.googlecode.libphonenumber</groupId>
+            <artifactId>libphonenumber</artifactId>
+            <version>8.13.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountmonitorcenter</groupId>
+            <artifactId>account-monitor-center-core</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountadmin</groupId>
+            <artifactId>account-admin-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.binance.accountanalyze</groupId>
+            <artifactId>account-analyze-core</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.messaging</groupId>
+            <artifactId>messaging-api2</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.binance.rebate.relation</groupId>
+            <artifactId>rebate-relation-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.cloud</groupId>
+                <artifactId>libraries-bom</artifactId>
+                <version>20.7.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>com.binance.mgs.account.BinanceMgsApplication</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>pl.project13.maven</groupId>
+                <artifactId>git-commit-id-plugin</artifactId>
+                <version>2.2.6</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>revision</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                    <compilerArgs>
+                        <compilerArg>-Amapstruct.defaultComponentModel=spring</compilerArg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
